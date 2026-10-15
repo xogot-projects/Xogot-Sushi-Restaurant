@@ -210,7 +210,7 @@ offset_left = 50.0
 offset_top = -230.0
 offset_right = 250.0
 offset_bottom = -50.0
-text = "◀"
+text = "LEFT"
 
 [node name="Right" type="Button" parent="Touch" unique_id=17498065]
 layout_mode = 0
@@ -220,7 +220,7 @@ offset_left = 280.0
 offset_top = -230.0
 offset_right = 480.0
 offset_bottom = -50.0
-text = "▶"
+text = "RIGHT"
 
 [node name="Act" type="Button" parent="Touch" unique_id=451266369]
 layout_mode = 0

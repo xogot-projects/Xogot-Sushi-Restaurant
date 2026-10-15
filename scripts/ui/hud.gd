@@ -38,7 +38,9 @@ func _ready() -> void:
 	screen_fx.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	pause_menu.visible = false
 	for b in [left_btn, right_btn, act_btn]:
-		UiKit.style_button(b, Color(0.35, 0.25, 0.22, 0.85), 64)
+		UiKit.style_button(b, Color(0.35, 0.25, 0.22, 0.85), 44)
+		# Movement buttons are 200 pixels wide, smaller than the menu-button minimum.
+		b.custom_minimum_size = Vector2(200, 96)
 		b.focus_mode = Control.FOCUS_NONE
 	UiKit.style_button(act_btn, Color(0.86, 0.23, 0.2, 0.9), 44)
 	left_btn.button_down.connect(func(): TouchInput.left_held = true)
